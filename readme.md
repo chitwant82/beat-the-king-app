@@ -1,6 +1,6 @@
 # beat-the-king-app
 
-Select 2 players and see there metrics.
+Select 2 players and compare their metrics.
 
 Server does some crafty complex computations to declare the winner :) :)
 
