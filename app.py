@@ -15,7 +15,12 @@ def root():
 
 @app.route('/players', methods=['GET', 'POST'])
 def index():
+
 	return render_template('players/index.html')
+
+@app.route('/players/new')
+def new():
+    return render_template('players/new.html')
 
 # If we are in production, make sure we DO NOT use the debug mode
 if os.environ.get('ENV') == 'production':
