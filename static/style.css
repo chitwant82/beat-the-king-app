@@ -5,11 +5,33 @@
   padding: 3rem 1.5rem;
   text-align: center;
 }*/
+
+/*#left, #right {
+    display: inline-block;
+    vertical-align: middle;
+}*/
+/*i { font-size: 18px; }*/
 div {
 	/*border: 1px dashed red;*/
 }
 body {
   padding-top: 3.5rem;
+}
+
+.icon-background4 {
+    color: #c0ffc0;
+}
+
+.icon-background6 {
+    color: #40c040;
+}
+
+.icon-background7 {
+  color: #d9534f;
+}
+
+.icon-background8 {
+  color:#F4C2C2;
 }
 
 select, option {
@@ -29,13 +51,23 @@ button {
 }
 
 .btn-thumb-active1 {
-	background-color:red;
+	/*background-color:red;*/
+  /*background-color: #C390D4;*/
+  /*background-color: #7048C7;*/
+  /*background-color: #C7487B;*/
+  /*background-color: #731522;*/
+  background-color: #8cd3ff;
   /*background-color:#ED1B24;*/
   color:white;
 }
 
 .btn-thumb-active2 {
-	background-color:green;
+	/*background-color:#BAC748;*/
+  /*background-color: #CC853D;*/
+
+
+  /*background-color: #9E950D;*/
+  background-color: #fac364;
   /*background-color:#ED1B24;*/
   color:white;
 }
@@ -60,10 +92,10 @@ button {
     left: 0;
 }
 
-.y.axisLeft text {
+/*.y.axisLeft text {
     fill: orange;
 }
 
 .x.axisBottom text {
     fill: steelblue;
-}
+}*/
