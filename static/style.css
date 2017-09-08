@@ -1,0 +1,69 @@
+/*body {
+  padding-top: 5rem;
+}*/
+/*.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}*/
+div {
+	/*border: 1px dashed red;*/
+}
+body {
+  padding-top: 3.5rem;
+}
+
+select, option {
+    width: 250px;
+    height: 50px;
+    font-size: large;
+    font-family: cursive;
+}
+
+select {
+	margin-bottom: 10px;
+
+}
+
+button {
+	margin-bottom: 10px;
+}
+
+.btn-thumb-active1 {
+	background-color:red;
+  /*background-color:#ED1B24;*/
+  color:white;
+}
+
+.btn-thumb-active2 {
+	background-color:green;
+  /*background-color:#ED1B24;*/
+  color:white;
+}
+
+.btn-thumb:hover {
+  /*background-color:#ED4545;*/
+  color:white;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.y.axisLeft text {
+    fill: orange;
+}
+
+.x.axisBottom text {
+    fill: steelblue;
+}

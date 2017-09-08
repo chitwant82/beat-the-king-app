@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="jumbotron" style="padding-bottom: 10px; padding-top: 10px;">
+      <div class="container text-center">
+      <div class="row">
+        <div class="col col-xs-12 col-sm-12 text-center">
+        <h1 class="display-4" style="margin-bottom: 20px;">Beat th`e King!</h1>
+        </div>
+       <div class="col col-md-6 col-xs-12">
+
+        <div>
+        <select class="custom-select" id="d1">
+           <option selected>Select Player 1</option>
+        </select>
+        </div>
+        <div id="btn-pla-1">
+        </div>
+
+
+        </div>
+        
+        <div class="col col-md-6 col-xs-12">
+        <div>
+        <select class="custom-select" id="d2">
+           <option selected>Select Player 2</option>
+        </select>
+        </div>
+     
+        <div id="btn-pla-2">
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+        
+    <div class="container">
+    <div class="row">
+      <div class="col-md-10" id="chartId">
+      <!-- <svg></svg> -->
+      </div>
+
+      <!-- <div class="col-md-2">
+      <button type="button" class="btn btn-primary btn-lg rounded-circle">Round</button>
+      </div> -->
+      </div>
+
+      <!-- <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div> -->
+
+    </div>
+{% endblock %}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beat the King</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery-3.1.1.slim.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/tether.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/d3.v4.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/utilities.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/custom.js') }}"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="{{url_for('index')}}">Home</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Player</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block content %} 
+    {% endblock %}
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2017</p>
+      </footer>
+    </div> -->
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Shapes!!</title>
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="vendor/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="col-xs-10 canvas-container">
+      <canvas id="shapes-game" height="750" width="800"></canvas>
+    </div>
+    <div class="col-xs-2 scores">
+      <h1>Score</h1>
+      <h3><span id="score-val">0</span></h3>
+      <h1>Timer</h1>
+      <h3><span id="time-remaining">30</span></h3>
+      <div class="legend">
+        <h1>Legend</h1>
+        <div class="legend-contents">
+          <div class="triangle-bottomleft-red">
+          </div>
+          <h4>Left</h4>
+          <div class="white-square">
+          </div>
+          <h4>Right</h4>
+          <div class="triangle-bottomleft-black">
+            <div class="triangle-inner-white"></div>
+          </div>
+          <h4>Up</h4>
+          <div class="red-square">
+          </div>
+          <h4>Down</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> -->
