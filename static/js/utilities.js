@@ -52,15 +52,15 @@ function d3Logic(filename, pl1, pl2) {
 	d3.csv(filename, function(row) {
     	return {
     		name: row["PNAME"],
-    		GP: +row["GP"],
-        W: +row["W"],
-        PTS: +row["PTS"],
-        'FG%': +row["FG%"],
-        '3P%': +row["3P%"],
-        REB: +row["REB"],
-        AST: +row["AST"],
-        STL: +row["STL"],
-        BLK: +row["BLK"]
+    		'Games Played': +row["GP"],
+        Wins: +row["W"],
+        Points: +row["PTS"],
+        'Field Goal%': +row["FG%"],
+        'Three Point%': +row["3P%"],
+        Rebounds: +row["REB"],
+        Assists: +row["AST"],
+        Steals: +row["STL"],
+        Blocks: +row["BLK"]
     	}
     }, function(error, data) {
     	if (error) throw error;
@@ -159,8 +159,8 @@ function d3Logic(filename, pl1, pl2) {
 	         .attr("height", function(d,i,j) { return height - y(d[categories[counter]]); });
 	    }
 
-	    var pl1Sum = Math.floor(data[0]['W'] + data[0]['PTS'] + data[0]['FG%'] + data[0]['3P%'] + data[0]['REB'] + data[0]['AST'] - data[0]['GP']);
-	    var pl2Sum = Math.floor(data[1]['W'] + data[1]['PTS'] + data[1]['FG%'] + data[1]['3P%'] + data[1]['REB'] + data[1]['AST'] - data[1]['GP'])
+	    var pl1Sum = Math.floor(data[0]['Wins'] + data[0]['Points'] + data[0]['Field Goal%'] + data[0]['Three Point%'] + data[0]['Rebounds'] + data[0]['Assists'] - data[0]['Games Played']);
+	    var pl2Sum = Math.floor(data[1]['Wins'] + data[1]['Points'] + data[1]['Field Goal%'] + data[1]['Three Point%'] + data[1]['Rebounds'] + data[1]['Assists'] - data[1]['Games Played'])
 	    if(pl1Sum > pl2Sum) generateIconsHtml(data[0]['name'], pl1Sum, data[1]['name'], pl2Sum);
 	    else generateIconsHtml(data[1]['name'], pl2Sum, data[0]['name'], pl1Sum);
 	    // $("#icons").empty();
