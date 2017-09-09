@@ -11,9 +11,11 @@
     vertical-align: middle;
 }*/
 /*i { font-size: 18px; }*/
-div {
-	/*border: 1px dashed red;*/
-}
+
+/*div {
+	border: 1px dashed red;
+}*/
+
 body {
   padding-top: 3.5rem;
 }
@@ -35,8 +37,10 @@ body {
 }
 
 select, option {
-    width: 250px;
-    height: 50px;
+    /*width: 250px;
+    height: 50px;*/
+    width: 60%;
+    height:60%;
     font-size: large;
     font-family: cursive;
 }

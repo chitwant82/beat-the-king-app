@@ -2,36 +2,37 @@
 {% block content %}
     <div class="jumbotron" style="padding-bottom: 10px; padding-top: 10px;">
       <div class="container text-center">
-      <div class="row">
-        <div class="col col-xs-12 col-sm-12 text-center">
-        <h1 class="display-4" style="margin-bottom: 20px;">Beat th`e King!</h1>
-        </div>
-       <div class="col col-md-6 col-xs-12">
+        <div class="row">
+          
+          <div class="col-xs-12 col-md-12"> <!-- col col-xs-12 -->
+            <h1 class="display-4">Beat th`e King!</h1> <!-- style="margin-bottom: 20px;" -->
+          </div> <!-- end of column 1 for title heading -->
+          
+          <div class="col-md-6"> <!-- col-xs-12 -->
+            <div>
+              <select class="custom-select" id="d1">
+                <option selected>Select Player 1</option>
+              </select>
+            </div>
 
-        <div>
-        <select class="custom-select" id="d1">
-           <option selected>Select Player 1</option>
-        </select>
-        </div>
-        <div id="btn-pla-1">
-        </div>
-
-
-        </div>
+            <div id="btn-pla-1">
+            </div>
+          </div> <!-- end of column 2 for select and button of player 1 -->
         
-        <div class="col col-md-6 col-xs-12">
-        <div>
-        <select class="custom-select" id="d2">
-           <option selected>Select Player 2</option>
-        </select>
-        </div>
+          <div class="col-md-6">
+            <div>
+              <select class="custom-select" id="d2">
+                <option selected>Select Player 2</option>
+              </select>
+            </div>
      
-        <div id="btn-pla-2">
-        </div>
-        </div>
-        </div>
-      </div>
-    </div>
+            <div id="btn-pla-2">
+            </div>
+          </div> <!-- end of column 3 for select and button of player 2 -->
+
+        </div> <!-- end of row -->
+      </div> <!-- end of container -->
+    </div> <!-- end of jumbotron -->
 
         
     <div class="container">
