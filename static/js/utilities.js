@@ -18,7 +18,7 @@ function buttonLogic(currentSelectValue, buttonDivElement, buttonElement, button
 		}
 	}
 	else {
-		if (!currentSelectValue.includes("Select Player")) {
+		// if (!currentSelectValue.includes("Select Player")) {
 		// if(currentSelectValue !== 'Select Player 1' && currentSelectValue !== 'Select Player 2') {
 			buttonElement.remove();
 			if(buttonId === 'btn-1') {
@@ -27,7 +27,7 @@ function buttonLogic(currentSelectValue, buttonDivElement, buttonElement, button
 			else {
 				buttonDivElement.append($('<button type="button" class="btn btn-thumb btn-thumb-active2" id=' + buttonId + '><img src="/static/pictures/player2.jpg" alt=""> ' + buttonText + '</button>'));
 			}
-		}
+		// }
 	}
 }
 

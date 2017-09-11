@@ -14,16 +14,16 @@ $(function() {
 	    player10 : 'Kyrie Irving'
 	};
 
-	var mySelect = $('#d1');
+	var mySelect1 = $('#d1');
 	$.each(myOptions, function(val, text) {
-	    mySelect.append(
+	    mySelect1.append(
 	        $('<option></option>').val(val).html(text)
 	    );
 	});
 
-	var mySelect = $('#d2');
+	var mySelect2 = $('#d2');
 	$.each(myOptions, function(val, text) {
-	    mySelect.append(
+	    mySelect2.append(
 	        $('<option></option>').val(val).html(text)
 	    );
 	});
@@ -36,15 +36,18 @@ $(function() {
    }).change(function () {
     	var cVal = $(this).val();
     	player1 = $("#d1 option[value='" + cVal + "']").text();
-    	$("#d2 option[value='" + prevD1 + "']").show();
-		  $("#d2 option[value='" + cVal + "']").hide();
+    	if(prevD1 !== null)
+    		mySelect2.append($('<option></option>').val(prevD1).
+    			html(myOptions[prevD1]));
+			$("#d2 option[value='" + cVal + "']").remove();
 
 		  var bDiv = $('#btn-pla-1');
 		  var btElement = $('#btn-1');
 
 		  buttonLogic(cVal, bDiv, btElement, 'btn-1', player1);
 		  
-		  if( (player1 !== undefined && player2 !== undefined) && (player1 !== "" && player2 !== "") ) {
+		  if( (player1 !== undefined && player2 !== undefined) &&
+		   (player1 !== "" && player2 !== "") ) {
 		  	d3Logic('/static/stats.csv', player1, player2);
 		  }
   });
@@ -55,15 +58,19 @@ $(function() {
   }).change(function () {
   	var cVal = $(this).val();
     player2 = $("#d2 option[value='" + cVal + "']").text();
-    $("#d1 option[value='" + prevD2 + "']").show();
-		$("#d1 option[value='" + $(this).val() + "']").hide();
+    if(prevD2 !== null)
+    	mySelect1.append($('<option></option>').val(prevD2).
+    		html(myOptions[prevD2]));
+
+		$("#d1 option[value='" + $(this).val() + "']").remove();
 
 		var bDiv = $('#btn-pla-2');
 		var btElement = $('#btn-2');
 
 		buttonLogic(cVal, bDiv, btElement, 'btn-2', player2);
 
-		if( (player1 !== undefined && player2 !== undefined) && (player1 !== "" && player2 !== "") ) {
+		if( (player1 !== undefined && player2 !== undefined) &&
+		 (player1 !== "" && player2 !== "") ) {
 			d3Logic('/static/stats.csv', player1, player2);
 		}
   });
