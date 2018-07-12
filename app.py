@@ -22,6 +22,10 @@ def index():
 def new():
     return render_template('players/new.html')
 
+@app.route('/games/tictactoe')
+def tictactoe():
+    return render_template('games/index.html')
+
 # If we are in production, make sure we DO NOT use the debug mode
 if os.environ.get('ENV') == 'production':
     debug = False

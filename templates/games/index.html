@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="ttt-main-div">
+    <div class="container-fluid" id="board">
+      <div class="row justify-content-center">
+        <h2 class="ttt-hdr">Tic Tac Toe</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="square" id="square_0_0"></div>
+        <div class="square" id="square_0_1"></div>
+        <div class="square" id="square_0_2"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="square" id="square_1_0"></div>
+        <div class="square" id="square_1_1"></div>
+        <div class="square" id="square_1_2"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="square" id="square_2_0"></div>
+        <div class="square" id="square_2_1"></div>
+        <div class="square" id="square_2_2"></div>
+     </div>
+     <div class="row justify-content-center">
+        <div> <button id="new-game" type="button" class="btn btn-default btn-sm btn-responsive">New Game</button> </div>
+     </div>
+     <div class="row justify-content-center" style="font-size: 1vw;">
+        <div> <h3 id="message"></h3></div>
+     </div>
+    </div>
+</div>
+{% endblock %}
